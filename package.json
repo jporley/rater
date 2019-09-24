@@ -1,0 +1,28 @@
+{
+  "name": "rater",
+  "version": "1.0.0",
+  "description": "Web project to rate decisions in a simple yet useful way.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jporley/rater.git"
+  },
+  "keywords": [
+    "rate",
+    "decision",
+    "options"
+  ],
+  "author": "Juan Porley",
+  "license": "AGPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/jporley/rater/issues"
+  },
+  "homepage": "https://github.com/jporley/rater#readme",
+  "devDependencies": {
+    "eslint": "^6.4.0",
+    "typescript": "^3.6.3"
+  }
+}
