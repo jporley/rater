@@ -1,17 +1,21 @@
 import { DatabaseEntity } from "./database-entity.model";
 import { Previewable } from "../interfaces/previewable";
 
+/**
+ * Represents any entity in the app that has typical metadata properties
+ * @implements Previewable
+ */
 export class MetadataEntity extends DatabaseEntity implements Previewable {
-  name: string = '';
-  description: string = '';
-  icon: string = '';
+  name: string = "";
+  description: string = "";
+  icon: string = "";
 
   constructor(name?: string, description?: string, icon?: string);
   constructor(json?: any);
-  constructor(nameOrJson?: any, description: string = '', icon: string = '') {
+  constructor(nameOrJson?: any, description: string = "", icon: string = "") {
     super(nameOrJson);
     if (nameOrJson) {
-      if (typeof nameOrJson === 'string') {
+      if (typeof nameOrJson === "string") {
         this.name = nameOrJson;
         this.description = description;
         this.icon = icon;
